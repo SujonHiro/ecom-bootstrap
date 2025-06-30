@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NavBar start -->
+    <nav class="fixed navbar navbar-expand-lg bg-light navbar-light mx-auto">
+      <div class="container">
+        <!-- <div class="dropdown my-2">
+          <button
+            class="btn dropdownBtn btn-dropdownLight dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Categories
+          </button>
+          <ul class="dropdown-menu customDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div> -->
+        <button
+          type="button"
+          class="navbar-toggler my-2"
+          data-bs-target="#navBarSupportedToggleBtn"
+          data-bs-toggle="collapse"
+          aria-controls="navBarSupportedToggleBtn"
+          aria-expanded="false"
+          area-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navBarSupportedToggleBtn">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="" class="nav-link">All Categories</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">All Brands</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Flash Sales</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar End -->
+
+    <!-- Banner Section Start-->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            src="https://mehendibymimi.com/assets/slider/2025/Feb/17393492749199.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+          <!-- <div
+            class="carousel-caption d-none d-md-block"
+            data-bs-interval="10000"
+          >
+            <h1 class="display-3 text-light fw-bolder">First slide label</h1>
+            <p>Some representative placeholder content for the first slide.</p>
+            <button class="btn text-white btn-primary">Shop now</button>
+          </div> -->
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img
+            src="https://mehendibymimi.com/assets/slider/2025/Feb/17393492662796.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-3 text-light fw-bolder">First slide label</h1>
+            <p>Some representative placeholder content for the first slide.</p>
+            <button class="btn text-white btn-primary">Shop now</button>
+          </div> -->
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img
+            src="https://mehendibymimi.com/assets/slider/2025/Feb/17393492246579.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-3 text-light fw-bolder">First slide label</h1>
+            <p>Some representative placeholder content for the first slide.</p>
+            <button class="btn text-white btn-primary">Shop now</button>
+          </div> -->
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Banner Section End -->
+    <!-- discoun news start -->
+    <div
+      class="bg-primary d-flex justify-content-center align-items-center py-4 gx-3 text-light"
+    >
+      <h6>
+        BIGGEST CELEBRATION OFFER 30% OFF ON ANARKALI COLLECTION -
+        <a class="text-light fw-bold" href="">SHOP NOW</a>
+      </h6>
+    </div>
+    <!-- discount news end -->
+
+    <!-- Campaign list start-->
+    <section class="container mx-auto my-5">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="card campaignCard border-3 border-bottom border-primary">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
+              <h2 class="text-primary">Campaign Date</h2>
+              <a href="#">Show all</a>
+            </div>
+            <div
+              class="card-body d-flex gap-3 justify-content-center align-items-center"
+            >
+              <div class="card customCard">
+                <div class="card-body customCardBody">
+                  <div class="card-img-wrapper">
+                    <a href="#">
+                      <img
+                        src="./assets/images/campaign-1.png"
+                        class="card-img"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card customCard">
+                <div class="card-body customCardBody">
+                  <div class="card-img-wrapper">
+                    <a href="#">
+                      <img
+                        src="./assets/images/campaign-1.png"
+                        class="card-img"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card customCard">
+                <div class="card-body customCardBody">
+                  <div class="card-img-wrapper">
+                    <a href="#">
+                      <img
+                        src="./assets/images/campaign-1.png"
+                        class="card-img"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Campaign list End-->
+
+    <!-- product card -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-3 my-5">
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <span class="badge-sale">Sale 17%</span>
+              <a href="#">
+                <img
+                  src="https://ninetheme.com/themes/anarkali/wp-content/uploads/2023/09/product1-22-450x600.jpg"
+                  alt="Product"
+                />
+                <img
+                  src="https://ninetheme.com/themes/anarkali/wp-content/uploads/2023/09/product2-20-450x600.jpg"
+                  class="overlay"
+                  alt="Hover Product"
+                />
+              </a>
+            </div>
+            <div class="product-body">
+              <div class="product-title">House of Dress</div>
+              <div class="product-price">
+                <del>$107.99</del>
+                <span class="text-primary fw-bold">$89.99</span>
+              </div>
+              <a href="#" class="btn btn-sm btn-outline-primary mt-2"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

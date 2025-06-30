@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+$primary: #ff3d71;
+$font-family-sans-serif: "Jost", sans-serif;
+$navbar-light-hover-bg-color: #dee2e6;
+$navbar-padding-y: 0;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-color-variables: (
+  "dropdownLight": #dee2e6,
+);
+
+$theme-colors: map-merge(
+  $map1: $custom-color-variables,
+  $map2: $theme-colors,
+);
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.dropdownBtn {
+  border-radius: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.dropdownBtn:hover {
+  background-color: $navbar-light-hover-bg-color;
+}
+.customDropdown {
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  --bs-navbar-padding-y: $navbar-padding-y;
+}
+.navbar-nav .nav-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.navbar-nav .nav-item:hover {
+  background-color: $navbar-light-hover-bg-color;
+}
+
+.card-img-wrapper {
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+}
+.card-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.customCard {
+  border: 0;
+}
+.card-img:hover {
+  transform: scale(1.05);
+}
+.customCardBody {
+  padding: 0;
+}
+.campaignCard {
+  border: 0;
+  box-shadow: 2px 6px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.product-img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+.product-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  display: block;
+}
+
+.product-img-wrapper img.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product-card:hover img.overlay {
+  opacity: 1;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 20px rgba(234, 46, 46, 0.1);
+}
+
+.product-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.product-price del {
+  color: #888;
+  margin-right: 0.5rem;
+}
+
+.badge-sale {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: crimson;
+  color: white;
+  font-size: 0.75rem;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
