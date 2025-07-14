@@ -103,7 +103,7 @@
 .custom-btn {
   display: inline-block;
   padding: 5px 15px;
-  background-color: #d73609; /* red tone */
+  background-color: #d73609; 
   color: #fff;
   border: none;
   border-radius: 7px;
@@ -174,10 +174,7 @@
 }
 
 .custom-coupon-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+ 
   border: 1px solid red;
   border-radius: 7px;
   row-gap: 20;
@@ -187,9 +184,7 @@
 }
 
 .custom-coupon-card2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  
   border: 1px solid #5fc524;
   border-radius: 7px;
   row-gap: 20;
