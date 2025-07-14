@@ -157,6 +157,8 @@
 .icon-link {
   color: #333;
   transition: all 0.3s ease;
+  border: 0;
+  background: transparent;
 }
 
 .icon-link:hover {
@@ -218,6 +220,8 @@
 }
 .modal-header .btn-close {
   margin-left: inherit;
+  background-color: #cccccc;
+  border-radius: 50%;
 }
 .modal-header {
   justify-content: center;
