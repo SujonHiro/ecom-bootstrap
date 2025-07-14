@@ -18,26 +18,12 @@
       referrerpolicy="no-referrer"
     />
     <link href="./assets/main.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
     <!-- NavBar start -->
     <nav class="fixed navbar navbar-expand-lg bg-light navbar-light mx-auto">
       <div class="container">
-        <!-- <div class="dropdown my-2">
-          <button
-            class="btn dropdownBtn btn-dropdownLight dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Categories
-          </button>
-          <ul class="dropdown-menu customDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div> -->
         <button
           type="button"
           class="navbar-toggler my-2"
@@ -53,15 +39,96 @@
         <div class="collapse navbar-collapse" id="navBarSupportedToggleBtn">
           <ul class="navbar-nav">
             <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-            <li class="nav-item">
-              <a href="" class="nav-link">All Categories</a>
-            </li>
+
             <li class="nav-item">
               <a href="" class="nav-link">All Brands</a>
             </li>
             <li class="nav-item">
               <a href="" class="nav-link">Flash Sales</a>
             </li>
+
+            <!-- create a Mega menu Started-->
+            <li class="nav-item">
+              <a href="" class="nav-link">Categories</a>
+              <div class="megabox">
+                <div class="container">
+                  <div class="row">
+                    <!-- Left Column -->
+                    <div class="col-12 col-md-4">
+                      <h6 class="mb-3">Categories</h6>
+                      <a href="#" class="allCategories">
+                        <div class="d-flex gap-3 align-items-center">
+                          <img
+                            class="cate-img"
+                            src="./assets/images/product.jpg"
+                            alt="cate-img"
+                          />
+                          <h6 class="cate-text mb-0">Women's Fashion</h6>
+                        </div>
+                        <div class="productlength">20</div>
+                      </a>
+                      <a href="#" class="allCategories">
+                        <div class="d-flex gap-3 align-items-center">
+                          <img
+                            class="cate-img"
+                            src="./assets/images/product.jpg"
+                            alt="cate-img"
+                          />
+                          <h6 class="cate-text mb-0">Men's Fashion</h6>
+                        </div>
+                        <div class="productlength">20</div>
+                      </a>
+                      <!-- Repeat this block for more categories -->
+                      <a href="#" class="custom-btn">See-all Categories</a>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-12 col-md-8">
+                      <h6 class="mb-3">Featured</h6>
+                      <!-- You can add featured content, links, banners, or sliders here -->
+                      <div class="featured-content">
+                        <div class="row mx-lg-n5">
+                          <!-- Subcategory Item -->
+                          <div class="col-6 col-sm-3 col-md-2 mb-2">
+                            <a
+                              href="#"
+                              class="featured-item text-center d-block"
+                            >
+                              <img
+                                src="./assets/images/dres.jpg"
+                                alt="Kids"
+                                class="sub-img"
+                                width="225"
+                                height="300"
+                              />
+                              <div class="sub-name">Panjabi</div>
+                            </a>
+                          </div>
+                          <div class="col-6 col-sm-3 col-md-2 mb-2">
+                            <a
+                              href="#"
+                              class="featured-item text-center d-block"
+                            >
+                              <img
+                                src="./assets/images/dres.jpg"
+                                alt="Kids"
+                                class="sub-img"
+                                width="225"
+                                height="300"
+                              />
+                              <div class="sub-name">Panjabi</div>
+                            </a>
+                          </div>
+
+                          <!-- Repeat as needed -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- create a Mega menu End-->
           </ul>
         </div>
       </div>
