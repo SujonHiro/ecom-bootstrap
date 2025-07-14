@@ -1,3 +1,11 @@
+.custom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
 .nav-item {
   position: static;
 }
@@ -90,7 +98,7 @@
   background-color: #d73609; /* red tone */
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 7px;
   font-size: 14px;
   font-weight: 500;
   text-transform: capitalize;
@@ -144,4 +152,73 @@
   font-size: 14px;
   font-weight: 500;
   color: #444;
+}
+
+.icon-link {
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #d62828;
+}
+
+.custom-coupon-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid red;
+  border-radius: 7px;
+  row-gap: 20;
+}
+.custom-coupon-card h6 {
+  color: #d62828;
+}
+
+.custom-coupon-card2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #5fc524;
+  border-radius: 7px;
+  row-gap: 20;
+}
+.custom-coupon-card2 h6 {
+  color: #419c0c;
+}
+.custom-coupon-card2 a {
+  background-color: #5fc524;
+}
+
+.custom-coupon-card2 a:hover {
+  background-color: #4c9c1d;
+}
+.modal-dialog {
+  width: 100vw;
+  max-width: 100%;
+}
+.modal-content {
+  border-radius: 0;
+}
+.modal-body {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-body input.form-control {
+  width: 550px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.modal-body input.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.modal-header .btn-close {
+  margin-left: inherit;
+}
+.modal-header {
+  justify-content: center;
 }
