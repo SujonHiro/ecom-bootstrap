@@ -10,7 +10,6 @@
   position: static;
 }
 .megabox {
-  display: none;
   position: fixed;
   width: 100vw;
   top: 50px;
@@ -22,10 +21,19 @@
   margin-top: 5px;
   padding: 20px 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease,
+    transform 0.4s ease;
 }
 
 .nav-item:hover .megabox {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 /* Category card link */
 .allCategories {
